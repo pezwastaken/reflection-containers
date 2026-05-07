@@ -4,8 +4,8 @@ import java.util.Random;
 public class Main {
 	public static void main(String[] args) {
 		try {
-			String className = "Cat  ";
-			className.trim();
+			String className = "Cat";
+			// className.trim();
 
 			Class c = Class.forName(className);
 			Object o = c.newInstance();
