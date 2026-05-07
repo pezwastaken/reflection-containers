@@ -39,7 +39,7 @@ WORKDIR /doop/doop-4.25.0
 RUN ls /doop/JREs/jre1.8/lib
 
 
-# RUN ./gradlew assemble
+RUN ./gradlew assemble
 
 # TODO: tamiflex goes here
 
