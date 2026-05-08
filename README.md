@@ -26,5 +26,5 @@ you can then find the results in:
 - doop_results/id/CallGraphEdge.csv
 
 
-the solar container dumps on stdout the unsound reflective calls.
+the solar container dumps to stdout the unsound reflective calls.
 
