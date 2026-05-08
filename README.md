@@ -22,8 +22,8 @@ watch out for ram usage when running the doop container.
 ---
 
 you can then find the results in:
-    - solar_results/call-edges.txt
-    - doop_results/<id>/CallGraphEdge.csv
+- solar_results/call-edges.txt
+- doop_results/id/CallGraphEdge.csv
 
 
 the solar container dumps on stdout the unsound reflective calls.
