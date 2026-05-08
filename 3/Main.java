@@ -1,22 +1,15 @@
 import java.lang.reflect.Method;
-import java.util.Random;
 
 public class Main {
 	public static void main(String[] args) {
 		try {
-			String className = "Cat ";
-			className = className.trim();
-
-			Class<?> c = Class.forName(className);
-			Object o = c.newInstance();
-
+			Class<?> c = Class.forName("Cat");
 			Method method = c.getDeclaredMethod("sound");
-
-			method.invoke(o);
-
+			method.invoke(null);
 		}
 		catch (Exception e) {
 			System.out.println("no sound");
 		}
 	}
 }
+
