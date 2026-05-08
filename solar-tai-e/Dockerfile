@@ -21,6 +21,8 @@ RUN wget https://github.com/pascal-lab/Tai-e/releases/download/v0.5.2/tai-e-all-
 
 RUN git checkout v0.5.2 && git submodule update --init --recursive
 
-ENTRYPOINT ["/bin/bash"]
+RUN ls /tai-e/Tai-e
+
+ENTRYPOINT ["java", "-jar", "/tai-e/Tai-e/tai-e-all-0.5.2.jar"]
 
 
