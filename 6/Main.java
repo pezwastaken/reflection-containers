@@ -8,7 +8,7 @@ public class Main {
 
 			Object cat = foo(c);
 
-			Method method = c.getDeclaredMethod("sound");
+			Method method = c.getDeclaredMethod("sound2");
 			method.invoke(cat);
 		}
 		catch (Exception e) {
