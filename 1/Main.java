@@ -2,32 +2,26 @@ import java.lang.reflect.Method;
 import java.util.Random;
 
 public class Main {
-	public static void main(String[] args) {
-		try {
-			String className = "";
+	public static void main(String[] args) throws Exception {
+		String className = "";
 
-			Random r = new Random();
-			int r1 = r.nextInt(10);
+		Random r = new Random();
+		int r1 = r.nextInt(10);
 
-			if (r1 == 0) {
-				className += "Ca";
-			}
-			else {
-				className += "Ra";
-			}
-
-			className += "t";
-
-			Class c = Class.forName(className);
-			Object o = c.newInstance();
-
-			Method method = c.getDeclaredMethod("sound");
-
-			method.invoke(o);
-
+		if (r1 == 0) {
+			className += "Ca";
 		}
-		catch (Exception e) {
-			System.out.println("no sound");
+		else {
+			className += "Ra";
 		}
+
+		className += "t";
+
+		Class c = Class.forName(className);
+		Object o = c.newInstance();
+
+		Method method = c.getDeclaredMethod("sound");
+
+		method.invoke(o);
 	}
 }
