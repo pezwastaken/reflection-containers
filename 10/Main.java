@@ -25,5 +25,16 @@ class Dog {
 	}
 }
 
+class Rat {
+	public void sound(Integer[] x) {
+		System.out.println("squeak");
+	}
+}
+
+class Panda {
+	public void sound(Float x) {
+		System.out.println("chomp");
+	}
+}
 
 
